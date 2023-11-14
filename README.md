@@ -1,5 +1,28 @@
 # Networks Final Project
 
+## Goal
+
+The goal of this project is to facilitate the seamless transfer of files to and from an FTP server, allowing clients to download or upload files regardless of their size. The maximum file size is set at 64 MB, with the flexibility to adjust it by modifying the buffer size where the server or client stores the received file.
+
+## Workflow
+
+1. **DHCP (Dynamic Host Configuration Protocol):**
+   - The client initially obtains an IP address dynamically through the DHCP server.
+   - DHCP server automatically provides an IP address, subnet mask, and default gateway.
+
+2. **DNS (Domain Name System) Server:**
+   - After receiving an IP address, the client queries the DNS server to resolve the local IP address of the FTP server.
+   - DNS server translates the domain name to the corresponding IP address.
+
+3. **FTP (File Transfer Protocol):**
+   - With the FTP server's IP address obtained, clients can seamlessly transfer files to and from the server.
+   - Download or upload operations are supported, and there are no restrictions on file size within the specified maximum limit.
+
+## File Size Configuration
+
+The maximum file size for transfers is set at 64 MB. To modify this limit, adjust the size of the buffer where the server or client saves the received file.
+
+
 ## FTP (File Transfer Protocol)
 
 **What is FTP?**
